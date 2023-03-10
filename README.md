@@ -1,2 +1,2 @@
 # Portfolio
-Using html, css and bootstrap
+Portfolio website using html, css and bootstrap
