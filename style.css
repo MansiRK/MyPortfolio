@@ -1,0 +1,304 @@
+body {
+    padding: 0;
+    margin: 0;
+    /* background-image: linear-gradient(to bottom right, rgb(218, 86, 134) ,rgb(153, 48, 66), rgb(67, 33, 46) ); */
+    /* background-color: rgb(126, 126, 203); */
+    background-color: rgb(238, 191, 155);
+}
+
+.header_wrapper{
+    position: sticky;
+}
+.header_wrapper .main-btn{
+    border: 1px solid gray;
+    color: rgb(254, 254, 254);
+    border-radius: 50px; 
+    padding: 5px 18px;
+}
+
+.projects_wrapper .main-btn{
+    border: 1px solid gray;
+    color: rgb(30, 30, 30);
+    border-radius: 50px; 
+    padding: 5px 18px;
+}
+
+.main-btn:hover{
+    color: rgb(37, 42, 46);
+    background-color: rgb(222, 63, 63);
+    border: rgb(37, 42, 46);
+}
+
+/* .home_wrapper .container {
+    height: 100vh;
+} */
+
+.home_wrapper .col-md-4{
+    background-image: linear-gradient(to bottom right, rgb(37, 42, 46) ,rgb(51, 48, 53), rgb(22, 22, 34) );
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.home_wrapper .col-md-8{
+    background-color: rgb(238, 191, 155);
+    /* background-image:  linear-gradient(to bottom right, rgb(218, 86, 134) ,rgb(153, 48, 66), rgb(67, 33, 46) ); */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.header_wrapper .nav-item .nav-link{
+    position: relative;
+    font-size: 20px;
+    font-weight: 500;
+    display: inline-block;
+    color: gray;
+}
+
+.header_wrapper .nav-item .nav-link::after{
+    position: absolute;
+    content: '';
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: rgb(222, 63, 63);
+    transition: 0.3s;
+    bottom: 0;
+}
+
+.header_wrapper .nav-item .nav-link.active::after,
+.header_wrapper .nav-item .nav-link:hover::after{
+    width: 100%;
+}
+
+.btn{
+    font-size: 20px;
+    border-radius: 50px;
+    
+}
+
+.btn:hover{
+    border: 2px solid rgb(37, 42, 46);
+    color: rgb(254, 243, 243)
+}
+
+a {
+    text-decoration: none;
+    color: rgb(37, 42, 46);
+    font-size: 20px;
+}
+
+h3{
+    font-size: 40px;
+    color: rgb(234, 5, 5);
+}
+
+
+
+h1{
+    font-size: 70px;
+    color: rgb(234, 5, 5);
+}
+
+h2{
+    font-size: 60px;
+    color: rgb(37, 42, 46);
+}
+
+strong{
+    color: rgb(234, 5, 5);
+}
+
+p{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.subtitle{
+    display: inline-block;
+    font-weight: 600;
+    font-size: 25px ;
+    color: rgb(37, 42, 46);
+    margin-bottom: 12px;
+}
+
+/* .about_wrapper .container {
+    height: 100vh;
+} */
+
+.about_wrapper ul.nav-pills {
+    border: 1px solid rgb(37, 42, 46);
+    border-radius: 50px;
+    background-color: rgb(37, 42, 46);
+    padding: 2px;
+    /* color: white; */
+}
+
+.about_wrapper ul li.nav-link.active {
+    border-radius: 50px;
+    transition: all 0.45s cubic-bezier(0, 0.2, 0.2, 1);
+    color: rgb(37, 42, 46);
+    padding: 2px;
+    border: 0;
+}
+
+/* .nav-link .active {
+    background-color: rgb(234, 5, 5);
+} */
+
+.nav-pills{
+    color: white;
+    font-size: 20px;
+}
+
+.nav-pills .nav-link.active {
+    border-radius: 50px;
+    background-color: red;
+    color: rgb(37, 42, 46);
+    /* padding: 2px; */
+}
+
+.about_wrapper .progress{
+    color: white;
+    height: 7px;
+    margin: 0;
+}
+
+.about_wrapper .progress .progress-bar{
+    background-color: rgb(234, 5, 5);
+    color: white;
+    height: 7px;
+}
+
+
+.single-progress h6{
+    font-size: 25px;
+}
+.single-progress .label{
+    font-size: 20px;
+}
+
+/* .service_wrapper .container {
+    height: 100vh;
+} */
+
+.projects_wrapper .card {
+    height: 40vh;
+    background-color: rgb(37, 42, 46);
+    cursor: pointer;
+    /* padding: 60px 0 40px 0; */
+    color: aliceblue;
+    transition: transform cubic-bezier(0.05, 0.2, 0.1, 1);
+    box-shadow: 0.65s cubic-bezier(0.05, 0.2, 0.1, 1);
+}
+
+.projects_wrapper .card:hover {
+    box-shadow: 0px 2px 50px 0 rgb(11, 29, 44);
+    transform: translateY(-5px);
+}
+
+.projects_wrapper h4 a{
+    background-color: rgb(228, 228, 238);
+    color: rgb(52, 50, 50);
+}
+
+/* .contact_wrapper .container {
+    height: 100vh;
+} */
+
+.contact_wrapper .form-control,
+.contact_wrapper textarea{
+    background-color: rgb(37, 42, 46);
+    border-color: rgb(37, 42, 46);
+    color: white;
+    font-size: 15px;
+    font-weight: 300;
+    padding: 10px;
+}
+
+.contact_wrapper .form-control:hover,
+.contact_wrapper textarea:hover,
+.contact_wrapper .form-control:focus,
+.contact_wrapper textarea:focus{
+    border: 3px solid rgb(234, 5, 5);
+    color: rgb(248, 237, 237);
+}
+
+.contact_wrapper ::placeholder{
+    color: white;
+}
+
+.contact_wrapper .call_details{
+    color: rgb(37, 42, 46);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.contact_wrapper .call_details a{
+    color: rgb(37, 42, 46);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.footer_wrapper{
+    /* background-color: rgb(34, 39, 44); */
+    padding: 14px 0;
+} 
+
+.footer_wrapper .social-icon li{
+    margin: 10px;  
+    
+} 
+
+.footer_wrapper .social-icon{
+    color: white;
+}
+
+i{
+    color: white; 
+}
+
+@media only screen and (max-width: 360px) {
+
+    .about_wrapper .nav-pills .nav-link{
+        height: 50px;
+        width: 400px;
+    }
+    .about_wrapper .nav-pills .nav-link.active {
+        width: 250px;
+        transition: all 0.45s cubic-bezier(0, 0.2, 0.2, 1);
+    }
+
+    h3{
+        font-size: 35px;
+    }
+    h6{
+        font-size: 25px;
+    }
+    h1{
+        font-size: 50px;
+    }
+    h2{
+        font-size: 40px;
+    }
+    
+    h6{
+        font-size: 30px;
+        color: rgb(37, 42, 46);
+    }
+    p{
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .projects_wrapper .card {
+        height: 60vh;
+        background-color: rgb(37, 42, 46);
+        cursor: pointer;
+        /* padding: 60px 0 40px 0; */
+        color: aliceblue;
+        transition: transform cubic-bezier(0.05, 0.2, 0.1, 1);
+        box-shadow: 0.65s cubic-bezier(0.05, 0.2, 0.1, 1);
+    }
+}
